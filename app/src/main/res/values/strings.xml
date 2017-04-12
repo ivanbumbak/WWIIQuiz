@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WWII Quiz</string>
+    
+    <string name="general">general</string>
+    <string name="colonel">colonel</string>
+    <string name="captain">captain</string>
+    <string name="cadet">officer cadet</string>
+
+</resources>

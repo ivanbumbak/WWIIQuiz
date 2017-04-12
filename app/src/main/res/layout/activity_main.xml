@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.harrypotterquizapp.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ww2jpg"
+        android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Question No.1"
+            android:textAllCaps="true" />
+
+        <EditText
+            android:id="@+id/wwii_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:hint="WWII lasted for how many years?"
+            android:inputType="textCapSentences" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Question No.2"
+            android:textAllCaps="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Who fo these were Allied leaders?" />
+
+
+            <CheckBox
+                android:id="@+id/joseph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Joseph Stalin"/>
+
+            <CheckBox
+                android:id="@+id/hirohito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hirohito"/>
+
+            <CheckBox
+                android:id="@+id/shek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chiang Kai-shek"/>
+
+            <CheckBox
+                android:id="@+id/churchill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Winston Churchill"/>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Question No.3"
+            android:textAllCaps="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Which city has been destroyed by nuclear bomb?" />
+
+
+            <CheckBox
+                android:id="@+id/nagasaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nagasaki"/>
+
+
+            <CheckBox
+                android:id="@+id/tokyo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tokyo"/>
+
+
+            <CheckBox
+                android:id="@+id/hiroshima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hiroshima"/>
+
+
+            <CheckBox
+                android:id="@+id/osaka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Osaka"/>
+</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Question No.4"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Who cracked ENIGMA?" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/einstein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Albert Einstein" />
+
+            <RadioButton
+                android:id="@+id/turing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alan Turing" />
+
+            <RadioButton
+                android:id="@+id/oppenheimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Robert Oppenheimer" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Question No.5"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="What was the code name for Normandy landings?" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/overlord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Operation Overlord" />
+
+            <RadioButton
+                android:id="@+id/neptune"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Operation Neptune" />
+
+            <RadioButton
+                android:id="@+id/barbarossa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Operation Barbarossa" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="result"
+            android:text="Result" />
+    </LinearLayout>
+
+</ScrollView>
